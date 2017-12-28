@@ -1,0 +1,280 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	.mobile.side-nav.active
+		background-color: $bg
+	.logo-mobile
+		display: block
+	.control-panel__button
+		display: none
+	.logo-mobile
+		display: block
+	.main__content
+		width: 100%
+		margin-bottom: 30px
+	.sidebar
+		width: 100%
+	.sidebar .app
+		width: 100%
+		justify-content: flex-start
+	.sidebar .app a
+		width: 120px
+		margin-right: 15px		
+	.sidebar__item
+		width: 30%
+	.viewed__item
+		width: 45%
+	.col.xl8.social-widget
+		width: 100%
+	.news	
+		.col.xl4
+			width: 100%
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			align-items: center
+		.news__item
+			width: 45%
+	.footer__menu
+		display: none
+	footer	
+		.col.xl4
+			width: 100%
+			text-align: center
+			margin-bottom: 20px
+			.logo
+				display: inline-block
+		.alert18
+			text-align: center
+	.control-panel__catalog
+		width: 45%
+	#search
+		width: 50%
+	.control-panel__interface
+		width: 100px
+	.shop__controls
+		flex-wrap: wrap
+		a
+			margin-bottom: 5px
+	.catalog__filter
+		top: 50px
+
+	.product-conception__storeoffer
+		width: 100%
+		max-width: 100%																							
+	
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.side-nav a
+		padding: 10px 16px
+	.product-conception__content
+		flex-wrap: wrap
+	.product-conception__image
+		width: 100%
+		text-align: center
+	.product-conception__info
+		padding-left: 0
+		width: 100%
+	.prices__item
+		flex-wrap: wrap
+	.comments__form-add-comment
+		flex-wrap: wrap
+	.comments__form-add-comment .comments__form__wrap
+		margin-bottom: 20px
+
+	
+	
+		
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.base-title
+		font-size: 20px
+		letter-spacing: 1.2px
+	.sidebar__item
+		width: 47%
+	.shop__item
+		width: 48%
+		margin-bottom: 30px
+	.shop__image img
+		width: 100%
+	.news .news__item
+		width: 48%
+	.title
+		margin-bottom: 20px
+	.col.xl8.social-widget
+		display: none
+	.product
+		width: 47%
+	.main__content .product
+		width: 47%
+	.shop__controls .middle-width
+		min-width: 150px
+	.shop__controls .button--heart
+		width: 100%
+		text-align: center
+	.comments-grid
+		flex-wrap: wrap
+	.comments-grid .comments__block
+		width: 100%
+	.comments__form
+		width: 100%
+		margin-left: 0
+	.prices__table__row
+		flex-wrap: wrap
+	.average-price								
+		flex-wrap: wrap
+		margin-bottom: 20px
+	.price-chart
+		margin-bottom: 15px
+	.share-block
+		flex-wrap: wrap
+		a
+			margin-bottom: 20px
+	.product-conception__image
+		img
+			max-width: 100%
+	.prices__item
+		padding: 15px
+	.similar-drinks .product__link__img
+		height: auto
+	.comments__form
+		flex-wrap: wrap
+	.comments__form-add-comment .comments__form__wrap
+		width: 85%							
+
+																							
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px)
+	/**/
+	.header__bottom
+		height: auto
+	.control-panel
+		flex-wrap: wrap
+	.control-panel__catalog
+		width: 100%
+		margin: 0
+		margin-bottom: 10px
+	#search
+		width: 100%
+		margin: 10px
+		margin-top: 0
+	.control-panel__interface
+		width: 100%
+		margin: 10px
+		margin-top: 0
+	.map
+		height: 300px
+	.title
+		flex-wrap: wrap
+	.base-title
+		font-size: 25px
+		line-height: 30px
+	.product
+		width: 100%
+	.main__content .product
+		width: 100%
+	.sidebar__item
+		width: 100%
+	.viewed__item,
+	.news .news__item
+		width: 100%
+	.alert18
+		font-size: 18px
+	.shop__item
+		width: 100%	
+	.shop__controls .middle-width
+		min-width: 150px
+	.shop__controls .button--heart
+		width: 100%
+		text-align: center
+	.logo-mobile .logo
+		width: 210px
+		position: relative
+		left: -10%
+	.header__bottom
+		.container
+			width: 100%
+	.submit-btn__wrap
+		right: -2px
+	.ui-slider-horizontal .ui-slider-handle
+		top: -9px
+		margin-left: -5px
+		background-color: #cf1518
+	.ui-slider .ui-slider-handle 
+		position: absolute
+		z-index: 2
+		width: 20px
+		height: 20px
+		border-radius: 50%
+	.catalog__filter .masonry input
+		padding-top: 5px
+	.button.width--170
+		max-width: 100%
+		width: 100%
+	.product-conception__title
+		font-size: 19px
+		letter-spacing: 2px
+	.prices__table__row
+		padding-bottom: 0
+	.product-decription
+		padding-bottom: 0
+	.product__table__item.combination .link
+		width: auto
+	.breadcrumbs li
+		margin-right: 15px
+	.breadcrumbs li:after
+		right: -12px
+		top: 3px
+	.prices__price
+		margin: 10px 0
+	.similar-drinks
+		padding-top: 0
+	.single-product-page .control-panel__catalog .catalog__button
+		background-color: #0b1318								
+
+											
+	
+							
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+	.shop__controls .middle-width
+		width: 100%
+	.shop__content .item_rating_star .fa
+		font-size: 16px
+	.shop__info__name
+		letter-spacing: 1px
+	.product-conception__rating .product-conception__item_rating .item_rating_star .fa
+		font-size: 18px
+	.product-conception__rating .rating__number
+		font-size: 19px
+		top: 3px
+	.product-conception__buttons a
+		margin-right: 0
+	.product__table__item
+		margin-right: 0
+	.breadcrumbs li.active a
+		font-size: 11px
+	.breadcrumbs li a
+		font-size: 11px
+	.comments__form .select-wrapper
+		margin-bottom: 10px
+	.side-nav
+		width: 265px
+	.social .social__item
+		margin-left: 0										
+		
+
