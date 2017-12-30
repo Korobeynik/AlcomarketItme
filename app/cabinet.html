@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Alcoguide</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="libs/fancybox/jquery.fancybox.css">
+
+	<meta name="description"          content="Something beautiful is coming. Subscribe to the ŌURA Insider and be among the first to know.">
+	<meta property="og:url"           content="https://alcoguide.com/" />
+	<meta property="og:type"          content="alcoguide website" />
+	<meta property="og:title"         content="The Future of Sleep Is Near" />
+	<meta property="og:description"   content="Something beautiful is coming. Stay tuned." />
+	<meta property="og:image"         content="https://alcoguide.com/img/share.jpg" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { overflow-x: hidden; } html { background-color: #15222a; }</style>
+
+</head>
+
+<body class="single-product-page">
+	<div class="overlay"></div>
+	<!-- <div class="preloader">
+		<div class="pulse"></div>
+	</div> -->
+
+	<header class="header"> <!-- class="row side-nav" id="slide-out" -->
+		<div class="mobile" id="">
+			<div class="header__top">
+				<div class="container">
+					<div class="row">
+						<div class="col xl9">
+							<div class="flex-grid">
+								<ul class="lang">
+									<li><a href=""><img src="img/lang_en.png"></a></li>
+								</ul>
+								<ul class="main-menu">
+									<li class="main-menu__item active"><a href="section.html" class="main-menu__link">Главная</a></li>
+									<li class="main-menu__item"><a href="cabinet.html" class="main-menu__link">Новости</a></li>
+									<li class="main-menu__item"><a href="#" class="main-menu__link">О нас</a></li>
+									<li class="main-menu__item"><a href="#" class="main-menu__link">Вакансии</a></li>
+									<li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+									<li class="main-menu__item"><a href="#" class="main-menu__link">Покупателям</a></li>
+									<li class="main-menu__item"><a href="#" class="main-menu__link">Бизнесу</a></li>
+									<li class="main-menu__item item-add">
+										<a href="#" class="main-menu__link"><i class="fa fa-plus-square" aria-hidden="true"></i>Добавить магазин</a>
+									</li>
+									<li class="main-menu__item item-add">
+										<a href="#" class="main-menu__link"><i class="fa fa-plus-square" aria-hidden="true"></i>Добавить напиток</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col xl3">
+							<div class="social">
+								<div class="social__text">Подпишись</div>
+								<ul class="social__list">
+									<li class="social__item"><a href="#" class="social__link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+									<li class="social__item"><a href="#" class="social__link"><i class="fa fa-odnoklassniki-square" aria-hidden="true"></i></a></li>
+									<li class="social__item"><a href="#" class="social__link"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+									<li class="social__item"><a href="#" class="social__link"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__middle">
+				<div class="container">
+					<div class="row">
+						<div class="col xl4">
+							<a href="index.html" class="logo"><img src="img/logo.svg" alt="Alcoguide"></a>
+							
+						</div>
+						<div class="col xl8">
+							<div class="header__middle__content">
+								<div class="phone-block">
+									<a href="tel:88002500500" class="phone-block__link">8 800 2500 500</a> <br>
+									<a href="#" class="phone-block__button button">Заказать звонок</a>
+								</div>
+								<div class="info">
+										<div class="info__links">
+											<a href="#" class="info__link button button--dark info__button" id="degustation">
+											<i class="fa fa-glass" aria-hidden="true"></i>Дегустации</a>
+											<a href="#" class="info__link button button--dark info__button" id="action">
+											<i class="fa fa-percent" aria-hidden="true"></i>Акции</a>
+											<a href="#" class="info__link button button--dark info__button dropdown-button" id="shops"  data-activates='dropdown2'>
+											<i class="fa fa-map-marker" aria-hidden="true"></i>Москва - <span class="red-color">200 магазинов</span><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+											<ul id='dropdown2' class='dropdown-content'>
+												<li><a href="#!">one</a></li>
+												<li><a href="#!">two</a></li>
+												<li><a href="#!">three</a></li>
+												<li><a href="#!">four</a></li>
+											</ul>
+											<a href="#" class="user user-login dropdown-button" data-activates='dropdown1'>
+												<div class="user__avatar">
+													<img src="img/user.png" alt="">
+												</div>
+												<span><span id="user-name">Константин</span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+											</a>
+											 <ul id='dropdown1' class='dropdown-content'>
+												<li><a href="#!">one</a></li>
+												<li><a href="#!">two</a></li>
+												<li><a href="#!">three</a></li>
+												<li><a href="#!">four</a></li>
+											</ul>
+										</div>	
+										<div class="info__text"><span>3 200 магазинов</span>	<span>32 200 напитков</span>	<span>314 200 предложений</span></div>
+			
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="logo-mobile">
+			<div class="container">
+				<div class="row">
+					<a href="index.html" class="logo"><img src="img/logo.svg" alt="Alcoguide"></a>
+					<a href="#" class="hamburger button-collapse" data-activates="slide-out">
+						<!-- <span></span>
+						<span></span>
+						<span></span> -->
+						<i class="material-icons dp48">dehaze</i>
+					</a>
+				</div>
+			</div>	
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<div class="row">
+					<div class="control-panel">
+						<div class="control-panel__catalog" id="catalog">
+							<div class="catalog__button"><i class="fa fa-list-ul" aria-hidden="true"></i> Каталог товаров<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+							<div class="catalog__filter">
+								<div class="choise-product">
+									<select>
+										<option value="" selected>Вино</option>
+										<option value="1">Option 1</option>
+										<option value="2">Option 2</option>
+										<option value="3">Option 3</option>
+									</select>
+								</div>
+								<div class="masonry">
+										<label for="amount">Цена</label>
+										<!-- <div id="slider-range"></div> -->
+										<div id="test-slider"></div>
+										<div class="caption">
+											<span id="slider-range-value1"></span>
+											<span id="slider-range-value2"></span>
+										</div>
+										<!-- <div class="input-wrap">
+											<input type="text" id="amount">
+											<input type="text" id="amount_1">
+										</div> -->
+								</div>
+
+								<div class="masonry">
+										<label for="amount">Выдержка</label>
+										<div id="test-slider2"></div>
+										<div class="caption">
+											<span id="slider-range-value3"></span>
+											<span id="slider-range-value4"></span>
+										</div>
+										<!-- <div id="slider-range2"></div>
+										<div class="input-wrap">
+											<input type="text" id="amount2">
+											<input type="text" id="amount_2">
+										</div> -->
+								</div>
+								<form class="catalog__filter-form">
+									<div class="filter-form__color">
+										<div class="filter-form__title">Цвет</div>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Белое</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Красное</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Розовое</span>
+										</label>
+									</div>
+									<div class="filter-form__sugar">
+										<div class="filter-form__title">Сахар</div>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Сухое</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Полусладкое</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Сладкое</span>
+										</label>
+									</div>
+								</form>
+							</div>
+						</div>
+							<form class="control-panel__search" id="search">
+								<span class="placeholder">Поиск товара</span>
+								<input id="search-input" type="search" required>
+								<label class="label-icon" for="search"></label>
+								<div class="file-btn__wrap input-btn">
+									<input id="file" name="file" type="file" value="">
+									<i class="fa fa-picture-o" aria-hidden="true"></i>
+								</div>
+								<i class="fa fa-search" aria-hidden="true"></i>
+								<div class="submit-btn__wrap input-btn">
+									<input id="submit" name="submit" type="submit" value="Найти">
+								</div>
+							</form>
+						<div class="control-panel__interface">
+							<a href="#" class="control-panel__button shops"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Магазины</a>
+							<a href="#" class="control-panel__button favorites"><i class="fa fa-heart" aria-hidden="true"></i> Избранное</a>
+							<a href="#" class="control-panel__button comparisons"><i class="fa fa-balance-scale" aria-hidden="true"></i>Сравнение</a>
+							<a href="#" class="basket" id="basket">
+								<div class="basket__info">
+									<span class="basket__count">1 товар </span>
+									<span class="basket__price">15 000р.</span>
+								</div>
+								<div class="basket__icon">
+									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="row">
+				<ul class="breadcrumbs__list">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Кабинет</a></li>
+					<li class="active"><a href="#">Заказы</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="orders">
+		<div class="container">
+			<div class="row">
+				<div class="title">
+					<h2 class="base-title prices__title">Заказы</h2>
+				</div>
+				<div class="orders__names">
+					<div class="time">Время</div>
+					<div class="city">Город</div>
+					<div class="name">Наименование</div>
+					<div class="price">Сумма</div>
+					<div class="user">Покупатель</div>
+					<div class="act">Действие</div>
+				</div>
+
+				<div class="orders__item">
+					<div class="orders__img"><img src="img/orders-img.png" alt=""></div>
+					<div class="orders__time">15 минут назад</div>
+					<div class="orders__city">г. Москва</div>
+					<div class="orders__name__product">
+						<div>Водка "Абрикон Голд" Абрикосовая 0,7</div>
+						<div class="orders__product__count">3 шт</div>
+					</div>
+					<div class="orders__price">23 623р.</div>
+					<div class="orders__user__info">
+						<div class="orders__user__name">Валерий Данилов</div>
+						<div class="orders__user__phone">8(913)715-55-55</div>
+					</div>
+					<a href="#" class="button width--170 orders__button">Обработать заказ</a>
+				</div>
+
+				<div class="orders__item">
+					<div class="orders__img"><img src="img/orders-img.png" alt=""></div>
+					<div class="orders__time">15 минут назад</div>
+					<div class="orders__city">г. Москва</div>
+					<div class="orders__name__product">
+						<div>Водка "Абрикон Голд" Абрикосовая 0,7</div>
+						<div class="orders__product__count">3 шт</div>
+					</div>
+					<div class="orders__price">23 623р.</div>
+					<div class="orders__user__info">
+						<div class="orders__user__name">Валерий Данилов</div>
+						<div class="orders__user__phone">8(913)715-55-55</div>
+					</div>
+					<a href="#" class="button width--170 orders__button">Обработать заказ</a>
+				</div>
+
+				<div class="orders__item">
+					<div class="orders__img"><img src="img/orders-img.png" alt=""></div>
+					<div class="orders__time">15 минут назад</div>
+					<div class="orders__city">г. Москва</div>
+					<div class="orders__name__product">
+						<div>Водка "Абрикон Голд" Абрикосовая 0,7</div>
+						<div class="orders__product__count">3 шт</div>
+					</div>
+					<div class="orders__price">23 623р.</div>
+					<div class="orders__user__info">
+						<div class="orders__user__name">Валерий Данилов</div>
+						<div class="orders__user__phone">8(913)715-55-55</div>
+					</div>
+					<a href="#" class="button width--170 orders__button">Обработать заказ</a>
+				</div>
+
+				<div class="orders__item">
+					<div class="orders__img"><img src="img/orders-img.png" alt=""></div>
+					<div class="orders__time">15 минут назад</div>
+					<div class="orders__city">г. Москва</div>
+					<div class="orders__name__product">
+						<div>Водка "Абрикон Голд" Абрикосовая 0,7</div>
+						<div class="orders__product__count">3 шт</div>
+					</div>
+					<div class="orders__price">23 623р.</div>
+					<div class="orders__user__info">
+						<div class="orders__user__name">Валерий Данилов</div>
+						<div class="orders__user__phone">8(913)715-55-55</div>
+					</div>
+					<a href="#" class="button width--170 orders__button">Обработать заказ</a>
+				</div>
+
+				<div class="orders__item">
+					<div class="orders__img"><img src="img/orders-img.png" alt=""></div>
+					<div class="orders__time">15 минут назад</div>
+					<div class="orders__city">г. Москва</div>
+					<div class="orders__name__product">
+						<div>Водка "Абрикон Голд" Абрикосовая 0,7</div>
+						<div class="orders__product__count">3 шт</div>
+					</div>
+					<div class="orders__price">23 623р.</div>
+					<div class="orders__user__info">
+						<div class="orders__user__name">Валерий Данилов</div>
+						<div class="orders__user__phone">8(913)715-55-55</div>
+					</div>
+					<a href="#" class="button width--170 orders__button">Обработать заказ</a>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+	
+	<section class="notice">
+		<div class="container">
+			<div class="row">
+				<h2 class="base-title dark-title">Продажа алкогольной продукции</h2>
+			</div>
+			<div class="row"><p class="notice__text">Согласно ФЗ РФ N 171 О госрегулировании алкогольного рынка от 22.11.1995 (ред. от 31.12.2014) продажа алкогольных напитков через интернет признана дистанционным способом распространения продукции и попадает под запрет.</p>
+			<p class="notice__text">«Алкомаркет» соблюдает законодательство, поэтому все алкогольные напитки реализуются в магазинах партнеров.</p></div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col xl4">
+					<a href="index.html" class="logo">
+						<img src="img/logo.svg" alt="Logo company">
+					</a>
+					<div class="copyright">© 2017 ALCOMARKET. Все права защищены. </div>
+					</div>
+					<div class="col xl8">
+						<div class="col xl12">
+							<ul class="footer__menu">
+								<li class="footer-menu__item"><a class="footer-menu__link" href="#">Пользовательское соглашение</a></li>
+								<li class="footer-menu__item"><a class="footer-menu__link" href="#">Новости</a></li>
+								<li class="footer-menu__item"><a class="footer-menu__link" href="#">О проекте</a></li>
+								<li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="alert18">18+ МИНЗДРАВ ПРЕДУПРЕЖДАЕТ: ЧРЕЗМЕРНОЕ УПОТРЕБЛЕНИЕ АЛКОГОЛЯ ВРЕДИТ ВАШЕМУ ЗДОРОВЬЮ</div>
+					</div>
+			</div>
+		</div>
+	</footer>
+		
+	<link rel="stylesheet" href="css/main.min.css">
+	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW8NdHPCFtPPPhY_SEO_kQeXs47J3EUiM"></script>
+	<script async src="js/scripts.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js'></script>
+	<script src="js/wNumb.js"></script>
+	<script src="libs/nouislider/nouislider.js"></script>
+	<script>
+
+		$(".product-conception__image a").fancybox();
+
+		//var slider = document.getElementById('test-slider');
+		var rangeSlider = document.getElementById('test-slider');
+	  var moneyFormat = wNumb({
+	    decimals: 0,
+	    thousand: ',',
+	    prefix: '$'
+	  });
+		noUiSlider.create(rangeSlider, {
+		 start: [3000, 15000],
+		 connect: true,
+		 step: 1,
+		 orientation: 'horizontal', // 'horizontal' or 'vertical'
+		range: {
+				'min': [  2000 ],
+				'max': [ 20000 ]
+			},
+		 format: wNumb({
+			 decimals: 0
+		 })
+		});
+		// Set visual min and max values and also update value hidden form inputs
+	  rangeSlider.noUiSlider.on('update', function(values, handle) {
+	    document.getElementById('slider-range-value1').innerHTML = values[0]  + 'р.';
+	    document.getElementById('slider-range-value2').innerHTML = values[1]  + 'р.';
+	    document.getElementsByName('min-value').value = moneyFormat.from(
+	      values[0]);
+	    document.getElementsByName('max-value').value = moneyFormat.from(
+	      values[1]);
+	  });
+
+	  //var slider = document.getElementById('test-slider');
+		var rangeSlider = document.getElementById('test-slider2');
+	  var moneyFormat = wNumb({
+	    decimals: 0,
+	    thousand: ',',
+	    prefix: '$'
+	  });
+		noUiSlider.create(rangeSlider, {
+		 start: [4, 15],
+		 connect: true,
+		 step: 1,
+		 orientation: 'horizontal', // 'horizontal' or 'vertical'
+		range: {
+				'min': [  2 ],
+				'max': [ 20 ]
+			},
+		 format: wNumb({
+			 decimals: 0
+		 })
+		});
+		// Set visual min and max values and also update value hidden form inputs
+	  rangeSlider.noUiSlider.on('update', function(values, handle) {
+	    document.getElementById('slider-range-value3').innerHTML = values[0];
+	    document.getElementById('slider-range-value4').innerHTML = values[1];
+	    document.getElementsByName('min-value').value = moneyFormat.from(
+	      values[0]);
+	    document.getElementsByName('max-value').value = moneyFormat.from(
+	      values[1]);
+	  });
+	</script>
+</body>
+</html>
