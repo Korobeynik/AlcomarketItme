@@ -65,7 +65,12 @@
 
 	.product-conception__storeoffer
 		width: 100%
-		max-width: 100%																							
+		max-width: 100%
+	.section-filter
+		.sidebar-wrap
+			display: none 
+		.sidebar-wrap.mobile-sidebar
+			display: block																									
 	
 
 /* Medium Devices, Desktops */
@@ -87,6 +92,30 @@
 		flex-wrap: wrap
 	.comments__form-add-comment .comments__form__wrap
 		margin-bottom: 20px
+	.filter__mobile
+		display: block
+	.filter
+		top: 0
+		display: none
+	.section-filter
+		.main	
+			//flex-direction: column-reverse
+			.filter__title
+				display: none	
+	.section-filter 
+		.main__content__top
+			flex-wrap: wrap
+		.pagination
+			width: 100%
+			margin: 10px 0
+			justify-content: center
+		.base-title.base-title-small
+			margin-bottom: 20px
+	.section-filter
+		.sidebar-wrap
+			display: none 
+		.sidebar-wrap.mobile-sidebar
+			display: block								
 
 	
 	
@@ -150,12 +179,26 @@
 		flex-wrap: wrap
 	.comments__form-add-comment .comments__form__wrap
 		width: 85%
-	.single-product-page	
+	.single-product-page
+		.app
+			width: 100%
+			margin-bottom: 40px
+		.sidebar__item
+			width: 100%	
 		.product
 			margin: 0 auto
 			display: block
 			margin-bottom: 20px
-			min-width: 300px								
+			min-width: 300px
+	.section-filter .sorting__text
+		margin-left: 0
+		margin-right: 20px
+	.main__content__top__item
+		margin-bottom: 15px
+	.section-filter .sidebar-wrap.mobile-sidebar
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between												
 
 																							
 
@@ -252,7 +295,9 @@
 		margin-left: 0s
 	.comments__form
 		padding-left: 0
-		margin-left: 0										
+		margin-left: 0
+	.section-filter .main__content__top__item .text
+		display: none											
 
 											
 	

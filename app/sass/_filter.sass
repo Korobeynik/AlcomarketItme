@@ -1,0 +1,306 @@
+.section-filter
+	.sidebar-wrap.mobile-sidebar
+		display: none
+	.base-title.base-title-small
+		margin-bottom: 20px
+	.breadcrumbs
+		width: 100%
+		padding-bottom: 5px
+	.content
+		padding-top: 0
+	.main__content__top
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 20px
+	.main__content__top__item
+		display: flex
+		align-items: baseline
+		.text
+			color: $gray
+			font-size: 13px
+			margin-left: 10px
+	.sorting
+		display: flex
+		align-items: center		
+	.sorting__text
+		color: $gray
+		font-size: 13px
+		margin-left: 10px
+
+.pagination
+	display: flex
+	align-items: center
+	a
+		width: 25px
+		height: 25px
+		background-color: #0b1318
+		color: #ffffff
+		font-size: 13px
+		text-align: center
+		line-height: 25px
+		display: inline-block
+		border-radius: 2px
+		margin: 0 2px
+		&.active
+			background-color: $red
+		.fa
+			color: $red 							
+
+.filter__mobile
+	background-color: $dark-blue
+	padding: 10px 0
+	display: none
+	.filter__title
+		margin-bottom: 0
+.filter
+	background-color: $dark-blue
+	width: 100%
+	padding: 25px 15px
+	position: relative
+	top: 0px
+	margin-bottom: 40px
+.control-panel__catalog .catalog__button
+	background-color: $red
+.catalog__button .fa-angle-down
+	color: #fff
+.sidebar__item
+	margin-bottom: 40px		
+.filter__title
+	font-size: 24px
+	font-weight: 700
+	text-transform: uppercase
+	letter-spacing: 2.44px
+	margin-bottom: 25px
+	span
+		color: $red
+
+.masonry
+	width: 100%
+	margin: 0 auto
+	label
+		color: #fff
+		font-weight: 500
+	.input-wrap
+		width: 100%	
+		display: flex
+		justify-content: space-between
+		margin-top: 5px
+	input
+		font-size: 13px !important
+		display: inline-block
+		height: 13px
+		width: 65px
+		border: none
+
+.noUi-horizontal .noUi-handle
+	width: 8px
+	height: 8px
+	background-color: $red
+	cursor: default
+	-ms-touch-action: none
+	touch-action: none
+	cursor: pointer
+.noUi-horizontal
+	height: 2px
+	background-color: $bg
+.noUi-target
+	background-color: $bg
+	border: none
+	box-shadow: none
+.noUi-handle
+	border: none
+	background-color: $bg !important
+	box-shadow: none
+
+.noUi-horizontal .noUi-handle
+	top: -3px
+	left: -4px
+	background-color: $red !important
+	&:before
+		display: none
+	&:after
+		display: none	
+.noUi-connect
+	background-color: $red !important
+
+.caption
+	display: flex
+	justify-content: space-between
+	padding-top: 5px
+	span
+		font-size: 13px
+.catalog__filter .masonry
+	margin-bottom: 40px		
+.masonry
+	margin-bottom: 10px
+	label
+		margin-bottom: 10px
+		display: block
+		font-size: 14px
+
+.filter
+	.select-wrapper span.caret
+		color: transparent
+		z-index: 100
+		right: 20px
+		top: 3px
+		background-image: url(../img/down-arrow.png)
+		background-repeat: no-repeat
+	.select-wrapper
+		color: #fff
+	.select-wrapper input.select-dropdown
+		box-sizing: border-box
+		padding-left: 15px		
+	.choise-product
+		max-width: 100%
+		width: 100%
+		position: relative
+		//background-image: url("../img/down-arrow.png")
+		margin-bottom: 20px
+		select
+			background-color: #fff
+			color: #ff2233
+			border: none
+			border-radius: 3px
+			height: 40px
+			font-size: 13px
+			letter-spacing: 0.8px
+			font-weight: 600
+			padding: 0 20px
+			position: relative
+			-moz-appearance: none
+			text-indent: 0.01px
+			text-overflow: ''
+			-ms-appearance: none
+			appearance: none !important
+			// background-image: url(../img/down-arrow.png)
+			background-size: 10px
+			background-repeat: no-repeat
+			background-position: 90% 50%
+			display: none
+			option
+				font-weight: 600
+			&:focus
+				outline: none
+			&:hover
+				cursor: pointer
+
+	.select-wrapper input.select-dropdown
+		background-color: transparent
+		border-radius: 20px
+		border: 1px solid $red
+		height: 40px
+		font-size: 13px
+		letter-spacing: 0.8px
+		font-weight: 300											
+
+	.dropdown-content li>a, .dropdown-content li>span
+		color: #fff
+		font-size: 13px
+		font-weight: 300
+
+	.dropdown-content
+		background-color: $red
+		li
+			border-bottom: 1px solid #fff
+			span
+				color: #fff
+
+#filter__form
+	label
+		font-size: 12px
+		color: $gray
+		padding-left: 25px
+		line-height: 17px
+	[type=checkbox].filled-in:not(:checked)+label:after
+		width: 16px
+		height: 16px
+		border: 1px solid $red
+	[type=checkbox].filled-in:checked+label:after
+		width: 16px
+		height: 16px
+		background-color: $red
+		border: 1px solid $red
+	[type=checkbox].filled-in:checked+label:before
+		width: 7px
+		height: 10px
+
+.filter__form__category
+	margin-bottom: 40px
+	.see-more
+		width: 100%
+		color: #fff
+		font-size: 14px
+		&:hover
+			cursor: pointer
+		span
+			display: inline-block
+			text-decoration: underline
+.filter__form__category__title
+	font-size: 13px
+	color: #fff
+	font-weight: 600
+	letter-spacing: 0.67px
+	margin-bottom: 5px
+	width: 100%
+.filter__form__category
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.filter__form__category__item
+	width: 50%
+
+.filter__button
+	width: 170px
+	padding: 10px 15px
+	border-radius: 4px
+	background-color: $red
+	border: none
+	display: block	
+	margin: 0 auto
+	color: #ffffff
+	font-size: 14px
+	font-weight: 300
+	letter-spacing: 0.8px
+
+//Saidbar
+.favorite-cocktails__item.hoverable
+	background-color: #fff
+	.favorite-cocktails__item_title
+		color: #333332
+	.favorite-cocktails__item_based
+		.item_based_text
+			color: $gray
+		.item_based_name
+			color: $red
+	.favorite-drinks__item_statistics
+		.item_rating__reviews
+			color: $gray
+			span
+				color: $red
+		.item_rating__comments
+			color: $gray
+			span
+				color: $red
+				
+.favorite-cocktails
+	a.favorite-cocktails__item_title.title_review
+		color: #333332
+		font-size: 13px
+		line-height: 13px
+		font-weight: 700
+
+.col.xl12.m12.favorite-cocktails__title.base-title
+	margin-top: 30px
+	margin-bottom: 10px
+.col.xl12.m6.s12.new-drinks_item.base_content_item.hoverable
+	padding: 10px
+	display: flex
+	align-items: center
+.favorite-cocktails__item_content
+	line-height: 15px	
+
+.favorite-cocktails .favorite-cocktails__item_avatar
+	margin-right: 20px																																

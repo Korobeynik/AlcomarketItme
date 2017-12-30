@@ -36,6 +36,11 @@ $(function() {
   	//$(".overlay").addClass('active');
 	});
 
+	
+	$('.filter__mobile').click( function(){
+		$('.filter').slideToggle();
+	});
+
 	$('.comments__form select').select();
 
 
@@ -49,6 +54,12 @@ $(function() {
     
  //    }
  //  );
+
+ 	$('.category__item-hidden').slideUp(200);
+
+	$('.see-more').on('click', function() {
+		$(this).closest('.filter__form__category').find('.category__item-hidden').slideToggle(200);
+	});
 
 	$('select').material_select();
 
