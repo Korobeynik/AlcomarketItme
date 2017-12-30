@@ -27,6 +27,8 @@ $(function() {
 
 	$(".overlay").removeClass('active');
 
+	
+
 	$('.hamburger').on('click', function(e) {
 		e.preventDefault();
   	$(this).toggleClass('opened');
@@ -93,6 +95,12 @@ $(function() {
             items:4,
             nav:true,
             loop:true
+        },
+         1600:{
+            items:4,
+            nav:true,
+            loop:true,
+            margin: 50
         }
     }		
 	});

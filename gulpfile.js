@@ -28,8 +28,6 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/materialize/js/materialize.min.js',
-		//'app/libs/jquery/dist/jquery-ui.min.js',
-		// 'app/libs/jquery/dist/jquery-toch.js',
 		'app/libs/nouislider/nouislider.js',
 		'app/libs/owlcarousel/owl.carousel.min.js',
 		'app/js/common.min.js', // Всегда в конце

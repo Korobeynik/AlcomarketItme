@@ -17,6 +17,7 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="libs/fancybox/jquery.fancybox.css">
 
 	<meta name="description"          content="Something beautiful is coming. Subscribe to the ŌURA Insider and be among the first to know.">
 	<meta property="og:url"           content="https://alcoguide.com/" />
@@ -279,7 +280,7 @@
 					<div class="product-conception__content">
 						<div class="product-conception__image">
 							<div class="art">Арт: 5011013525591</div>
-							<img src="img/product-img.png" alt="">
+							<a href="img/product-img.png" data-fancybox="images"><img src="img/product-img.png" alt=""></a>
 						</div>
 						<div class="product-conception__info">
 							<div class="product-conception__title">Cabernet Sauvignon 2003</div>
@@ -1021,9 +1022,14 @@
 	<link rel="stylesheet" href="css/main.min.css">
 	<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW8NdHPCFtPPPhY_SEO_kQeXs47J3EUiM"></script>
 	<script async src="js/scripts.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js'></script>
 	<script src="js/wNumb.js"></script>
 	<script src="libs/nouislider/nouislider.js"></script>
 	<script>
+
+		$(".product-conception__image a").fancybox();
+
 		//var slider = document.getElementById('test-slider');
 		var rangeSlider = document.getElementById('test-slider');
 	  var moneyFormat = wNumb({
